@@ -27,9 +27,9 @@ jobs:
   - task: Maven@3
     inputs:
       mavenPomFile: 'pom.xml'
-      goals: '-B DskipTests clean package'
+      goals: 'clean package'
+      options: '-B DskipTests'
       publishJUnitResults: false
-      testResultsFiles: '**/surefire-reports/TEST-*.xml'
       javaHomeOption: 'JDKVersion'
       mavenVersionOption: 'Default'
       mavenAuthenticateFeed: false
