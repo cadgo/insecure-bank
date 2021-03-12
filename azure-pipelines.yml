@@ -28,7 +28,7 @@ jobs:
     inputs:
       mavenPomFile: 'pom.xml'
       goals: 'clean package'
-      options: '-B DskipTests'
+      options: '-B -DskipTests'
       publishJUnitResults: false
       javaHomeOption: 'JDKVersion'
       mavenVersionOption: 'Default'
