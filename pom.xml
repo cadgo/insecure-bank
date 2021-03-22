@@ -115,6 +115,24 @@
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>
 			</plugin>
+			      <!--  Spotbugs  -->
+			        <plugin>
+					  <groupId>com.github.spotbugs</groupId>
+					  <artifactId>spotbugs-maven-plugin</artifactId>
+					  <version>4.2.0</version>
+					  <dependencies>
+					    <!-- overwrite dependency on spotbugs if you want to specify the version of spotbugs -->
+					    <dependency>
+					      <groupId>com.github.spotbugs</groupId>
+					      <artifactId>spotbugs</artifactId>
+					      <version>4.2.2</version>
+						  <configuration>
+						   <xmlOutput>true</xmlOutput>
+					          </configuration>
+					    </dependency>
+					  </dependencies>
+				</plugin>
+
 		</plugins>
 		<finalName>insecure-bank</finalName>
 	</build>
