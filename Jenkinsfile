@@ -1,3 +1,3 @@
-@Library('io-lib-usb') 
-import com.demo.*
-new com.demo.pipeline.EntryPoint().execute()
+@Library('io-lib-usb')
+import com.synopsys.sigio.*
+new pipeline.EntryPoint().execute()
